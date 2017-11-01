@@ -1,0 +1,9 @@
+<h1>new message</h1>
+<%= form_with scope: :messages,url: messages_path,local:true do |form| %>
+<p>
+<%= form.label :text %><br>
+<%= form.text_area :text %>
+<%= form.submit %>
+</p>
+<% end %>
+
